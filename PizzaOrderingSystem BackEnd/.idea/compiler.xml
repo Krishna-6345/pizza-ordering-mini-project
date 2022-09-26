@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="JwtDemo" />
+        <module name="APIGateway" />
+        <module name="PizzaOrder" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="APIGateway" target="8" />
+      <module name="JwtDemo" target="11" />
+      <module name="PizzaOrder" target="8" />
+      <module name="PizzaOrderingSystem" target="11" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="APIGateway" options="-parameters" />
+      <module name="JwtDemo" options="-parameters" />
+      <module name="PizzaOrder" options="-parameters" />
+    </option>
+  </component>
+</project>

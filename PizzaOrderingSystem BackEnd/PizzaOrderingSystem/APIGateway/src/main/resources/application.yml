@@ -15,3 +15,14 @@ spring:
             allowedOrigins: "*"
             allowedMethods: "*"
             allowedHeaders: "*"
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://${EUREKA_SERVER_IP:localhost}:8761/eureka
+    fetchRegistry: true
+    registerWithEureka: true
+  cloud:
+    compatibility-verifier:
+      enabled: false
+

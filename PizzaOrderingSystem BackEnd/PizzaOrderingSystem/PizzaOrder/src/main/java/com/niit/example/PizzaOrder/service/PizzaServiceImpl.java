@@ -9,8 +9,10 @@ import java.util.List;
 import java.util.Optional;
 
 @Service
-public class PizzaServiceImpl implements PizzaService {
-private PizzaRepository pizzaRepository;
+public class PizzaServiceImpl implements PizzaService
+{
+    private PizzaRepository pizzaRepository;
+
     @Autowired
     public PizzaServiceImpl(PizzaRepository pizzaRepository) {
         this.pizzaRepository = pizzaRepository;

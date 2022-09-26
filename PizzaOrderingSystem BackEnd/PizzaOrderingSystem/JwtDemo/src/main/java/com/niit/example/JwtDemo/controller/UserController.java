@@ -10,6 +10,7 @@ import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping("/api/v1")
+//@CrossOrigin(origins = "http://localhost:4200")
 public class UserController {
     private UserService userService;
 
@@ -18,7 +19,7 @@ public class UserController {
         this.userService = userService;
     }
 
-    //@CrossOrigin(origins = "http://localhost:7811")
+
     @PostMapping("/user")
     public ResponseEntity<?> saveUser(@RequestBody User user) {
         return new ResponseEntity<>(userService.saveUser(user), HttpStatus.CREATED);

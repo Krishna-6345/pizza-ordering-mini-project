@@ -21,6 +21,7 @@
 		<module>JwtDemo</module>
 		<module>APIGateway</module>
 		<module>PizzaOrder</module>
+		<module>EurekaServer</module>
 
 	</modules>
 	<dependencies>
